@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Cảnh Quan Đẹp Nhất Việt Nam | Top 5 Beautiful Sceneries of Vietnam</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;    
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --red: #b5271e;
+            --gold: #c8922a;
+            --cream: #faf6f0;
+            --ink: #1a130a;
+            --mist: #ede6da;
+            --gray: #4a3f35;
+        }
+
+        body {
+            background: var(--cream);
+            color: var(--ink);
+            font-family: Arial, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        /* SKIP LINK */
+        .skip-link {
+            position: absolute;
+            top: -100%;
+            left: 1rem;
+            background: var(--red);
+            color: #fff;
+            padding: .4rem .9rem;
+            border-radius: 0 0 .4rem .4rem;
+            font-size: .82rem;
+            text-decoration: none;
+            transition: top .2s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* HEADER */
+        header {
+            background: var(--red);
+            padding: 2.5rem 2rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: .5rem .4rem;
+            margin-top: 1rem;
+        }
+
+        nav ul li a {
+            color: rgba(255, 255, 255, .8);
+            text-decoration: none;
+            font-size: .78rem;
+            border: 1px solid rgba(255, 255, 255, .35);
+            padding: .25rem .75rem;
+            border-radius: 99px;
+            transition: background .2s, color .2s;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, .2);
+            color: #fff;
+        }
+
+        /* MAIN */
+        main {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 5rem;
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: bold;
+            line-height: 1.2;
+            color: var(--red);
+            margin-bottom: .3rem;
+        }
+
+        .subtitle {
+            font-family: Arial, sans-serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--gray);
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--mist);
+        }
+
+        /* LIST */
+        ol {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        ol li {
+            display: grid;
+            grid-template-columns: 2rem 220px 1fr;
+            align-items: start;
+            gap: 0 1.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--mist);
+        }
+
+        .num {
+            font-family: Arial, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--gold);
+            line-height: 1;
+            padding-top: .2rem;
+        }
+
+        ol li img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: .5rem;
+            display: block;
+        }
+
+        .info {
+            padding-top: .3rem;
+        }
+
+        .info h2 {
+            font-family: Arial, sans-serif;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: .1rem;
+            line-height: 1.3;
+        }
+
+        .info .en {
+            font-size: .75rem;
+            color: var(--gold);
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            margin-bottom: .6rem;
+        }
+
+        .info p {
+            font-size: .85rem;
+            color: var(--gray);
+            line-height: 1.65;
+        }
+
+        .loc {
+            display: inline-block;
+            margin-top: .6rem;
+            font-size: .73rem;
+            color: var(--gray);
+            border: 1px solid var(--mist);
+            padding: .15rem .6rem;
+            border-radius: 99px;
+        }
+
+        /* MORE SECTION */
+        section {
+            background: var(--ink);
+            border-radius: .75rem;
+            padding: 1.8rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        section h2 {
+            font-family: Arial, sans-serif;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--gold);
+            margin-bottom: .3rem;
+        }
+
+        section p {
+            font-size: .83rem;
+            color: rgba(255, 255, 255, .55);
+            max-width: 380px;
+        }
+
+        section a {
+            display: inline-block;
+            background: var(--red);
+            color: #fff;
+            text-decoration: none;
+            font-size: .8rem;
+            font-weight: 500;
+            padding: .65rem 1.4rem;
+            border-radius: 99px;
+            white-space: nowrap;
+            transition: background .2s;
+        }
+
+        section a:hover {
+            background: #8f1b14;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 580px) {
+            ol li {
+                grid-template-columns: 1.5rem 1fr;
+                grid-template-rows: auto auto;
+            }
+
+            ol li img {
+                grid-column: 2;
+                height: 180px;
+            }
+
+            .info {
+                grid-column: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+        <nav aria-label="Điều hướng nhanh">
+            <ul>
+                <li><a href="#1">Jump to #1</a></li>
+                <li><a href="#2">Jump to #2</a></li>
+                <li><a href="#3">Jump to #3</a></li>
+                <li><a href="#4">Jump to #4</a></li>
+                <li><a href="#5">Jump to #5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <h1>Top 5 cảnh quan đẹp nhất Việt Nam</h1>
+        <p class="subtitle">Top 5 Beautiful Sceneries of Vietnam</p>
+
+        <ol>
+
+            <li id="1">
+                <span class="num">1</span>
+                <img src="HaLong.jpg"
+                    alt="Vịnh Hạ Long với hàng nghìn đảo đá vôi nhô lên từ mặt nước xanh ngọc bích tại Quảng Ninh"
+                    width="600" height="400" loading="lazy" />
+                <div class="info">
+                    <h2>Vịnh Hạ Long</h2>
+                    <p class="en">Ha Long Bay</p>
+                    <p>Hơn 1.600 đảo đá vôi kỳ vĩ vươn lên từ vùng vịnh xanh ngọc. UNESCO công nhận Di sản Thiên nhiên
+                        Thế giới năm 1994.</p>
+                    <span class="loc">📍 Quảng Ninh</span>
+                </div>
+            </li>
+
+            <li id="2">
+                <span class="num">2</span>
+                <img src="Sapa.jpg"
+                    alt="Ruộng bậc thang Sapa xanh mướt uốn lượn quanh sườn núi mù sương tại Lào Cai" width="600"
+                    height="400" loading="lazy" />
+                <div class="info">
+                    <h2>Ruộng Bậc Thang Sapa</h2>
+                    <p class="en">Sapa Rice Terraces</p>
+                    <p>Những thửa ruộng bậc thang hàng trăm năm tuổi do đồng bào H'Mông và Dao đỏ tạo nên trên sườn núi
+                        Hoàng Liên Sơn.</p>
+                    <span class="loc">📍 Lào Cai</span>
+                </div>
+            </li>
+
+            <li id="3">
+                <span class="num">3</span>
+                <img src="Son-doong.jpg"
+                    alt="Hang Sơn Đoòng với luồng ánh sáng tự nhiên chiếu xuống từ trần hang cao vút tại Quảng Bình"
+                    width="600" height="400" loading="lazy" />
+                <div class="info">
+                    <h2>Hang Sơn Đoòng</h2>
+                    <p class="en">Son Doong Cave</p>
+                    <p>Hang động tự nhiên lớn nhất thế giới, phát hiện năm 1990, với hệ sinh thái độc đáo và rừng cây
+                        bên trong lòng hang.</p>
+                    <span class="loc">📍 Quảng Bình</span>
+                </div>
+            </li>
+
+            <li id="4">
+                <span class="num">4</span>
+                <img src="PhoCoHoiAn.jpg"
+                    alt="Phố cổ Hội An về đêm với đèn lồng đỏ rực rỡ treo dọc những con phố cổ kính tại Quảng Nam"
+                    width="600" height="400" loading="lazy" />
+                <div class="info">
+                    <h2>Phố Cổ Hội An</h2>
+                    <p class="en">Hoi An Ancient Town</p>
+                    <p>Đô thị thương cảng cổ với những ngôi nhà màu vàng và đèn lồng rực rỡ. UNESCO ghi danh Di sản Văn
+                        hoá Thế giới năm 1999.</p>
+                    <span class="loc">📍 Quảng Nam</span>
+                </div>
+            </li>
+
+            <li id="5">
+                <span class="num">5</span>
+                <img src="muine.jpg"
+                    alt="Đồi cát đỏ Mũi Né với những gợn cát uốn lượn dưới ánh nắng vàng tại Bình Thuận" width="600"
+                    height="400" loading="lazy" />
+                <div class="info">
+                    <h2>Đồi Cát Mũi Né</h2>
+                    <p class="en">Mui Ne Sand Dunes</p>
+                    <p>Đồi cát đỏ và trắng hồng độc đáo trải dài bên bờ biển xanh, tạo nên khung cảnh như sa mạc giữa
+                        lòng Việt Nam.</p>
+                    <span class="loc">📍 Bình Thuận</span>
+                </div>
+            </li>
+
+        </ol>
+
+        <section>
+            <div>
+                <h2>Tìm hiểu thêm · Learn More</h2>
+                <p>Khám phá thêm cảnh quan và địa danh Việt Nam tại trang du lịch chính thức.</p>
+            </div>
+            <a href="https://vietnamtourism.gov.vn/english" target="_blank" rel="noopener noreferrer"
+                aria-label="Truy cập trang du lịch Việt Nam chính thức">Vietnam Tourism →</a>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
